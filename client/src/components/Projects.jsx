@@ -48,7 +48,7 @@ const Projects = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                  <p className="text-gray-400 text-sm mb-4 line-clamp-2">{project.description}</p>
+                  <p className="text-gray-400 text-sm mb-4 min-h-[80px] leading-relaxed">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, idx) => (
                       <span key={idx} className="bg-white/10 text-xs px-2 py-1 rounded text-primary-light">
