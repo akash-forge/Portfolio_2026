@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import logo from '../assets/Golden wolf logo.png';
 
 const Navbar = () => {
