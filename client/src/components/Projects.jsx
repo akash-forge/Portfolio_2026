@@ -37,8 +37,8 @@ const Projects = () => {
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <div key={project._id} className="glass-panel overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
-                <div className="h-48 overflow-hidden relative">
+              <div key={project._id} className="glass-panel overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full">
+                <div className="h-48 overflow-hidden relative flex-shrink-0">
                   <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-300 z-10"></div>
                   <img
                     src={project.imageUrl}
@@ -46,9 +46,11 @@ const Projects = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                  <p className="text-gray-400 text-sm mb-4 min-h-[80px] leading-relaxed">{project.description}</p>
+                  <p className="text-gray-400 text-sm mb-4 flex-grow leading-relaxed">
+                    {project.description}
+                  </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, idx) => (
                       <span key={idx} className="bg-white/10 text-xs px-2 py-1 rounded text-primary-light">
@@ -56,9 +58,11 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-                  <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white group-hover:text-secondary transition-colors inline-flex items-center">
-                    View Project <span className="ml-1">→</span>
-                  </a>
+                  <div className="mt-auto">
+                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white group-hover:text-secondary transition-colors inline-flex items-center">
+                      View Project <span className="ml-1">→</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
