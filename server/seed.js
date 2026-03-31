@@ -11,21 +11,21 @@ const projects = [
     title: "Portfolio Website",
     description: "Built and deployed a responsive personal portfolio displaying projects and skills. Developed during training at Rexnar Creative Solution.",
     technologies: ["HTML", "JavaScript", "React", "Tailwind CSS"],
-    imageUrl: "/src/assets/Website.jpg",
+    imageUrl: "/Portfolio_2026/projects/Website.jpg",
     projectUrl: "https://github.com/akash-forge"
   },
   {
     title: "Web Calculator App",
     description: "Developed a functional calculator with intuitive UI, enabling basic arithmetic via JavaScript logic.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    imageUrl: "/src/assets/Calculator.jpg",
+    imageUrl: "/Portfolio_2026/projects/Calculator.jpg",
     projectUrl: "https://github.com/akash-forge"
   },
   {
     title: "Chessboard Generator",
     description: "Created an interactive chessboard layout using JavaScript, demonstrating DOM manipulation and layout logic.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    imageUrl: "/src/assets/Chess board.jpg",
+    imageUrl: "/Portfolio_2026/projects/Chess board.jpg",
     projectUrl: "https://github.com/akash-forge"
   }
 ];

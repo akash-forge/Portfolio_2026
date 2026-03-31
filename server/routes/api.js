@@ -16,7 +16,7 @@ router.get('/projects', async (req, res) => {
           title: "Portfolio Website",
           description: "Built and deployed a responsive personal portfolio displaying projects and skills.",
           technologies: ["HTML", "JavaScript", "React", "Tailwind CSS"],
-          imageUrl: "/src/assets/Website.jpg",
+          imageUrl: "/Portfolio_2026/projects/Website.jpg",
           projectUrl: "https://github.com/akash-forge"
         },
         {
@@ -24,7 +24,7 @@ router.get('/projects', async (req, res) => {
           title: "Web Calculator App",
           description: "Developed a functional calculator with intuitive UI.",
           technologies: ["HTML", "CSS", "JavaScript"],
-          imageUrl: "/src/assets/Calculator.jpg",
+          imageUrl: "/Portfolio_2026/projects/Calculator.jpg",
           projectUrl: "https://github.com/akash-forge"
         },
         {
@@ -32,7 +32,7 @@ router.get('/projects', async (req, res) => {
           title: "Chessboard Generator",
           description: "Created an interactive chessboard layout using JavaScript.",
           technologies: ["HTML", "CSS", "JavaScript"],
-          imageUrl: "/src/assets/Chess board.jpg",
+          imageUrl: "/Portfolio_2026/projects/Chess board.jpg",
           projectUrl: "https://github.com/akash-forge"
         }
       ]);
@@ -47,7 +47,7 @@ router.get('/projects', async (req, res) => {
         title: "Portfolio Website (Dev)",
         description: "Built and deployed a responsive personal portfolio displaying projects and skills.",
         technologies: ["HTML", "JavaScript", "React", "Tailwind CSS"],
-        imageUrl: "/src/assets/Website.jpg",
+        imageUrl: "/Portfolio_2026/projects/Website.jpg",
         projectUrl: "https://github.com/akash-forge"
       },
       {
@@ -55,7 +55,7 @@ router.get('/projects', async (req, res) => {
          title: "Web Calculator App (Dev)",
          description: "Developed a functional calculator with intuitive UI.",
          technologies: ["HTML", "CSS", "JavaScript"],
-         imageUrl: "/src/assets/Calculator.jpg",
+         imageUrl: "/Portfolio_2026/projects/Calculator.jpg",
          projectUrl: "https://github.com/akash-forge"
       },
       {
@@ -63,7 +63,7 @@ router.get('/projects', async (req, res) => {
          title: "Chessboard Generator (Dev)",
          description: "Created an interactive chessboard layout using JavaScript.",
          technologies: ["HTML", "CSS", "JavaScript"],
-         imageUrl: "/src/assets/Chess board.jpg",
+         imageUrl: "/Portfolio_2026/projects/Chess board.jpg",
          projectUrl: "https://github.com/akash-forge"
       }
     ]);
