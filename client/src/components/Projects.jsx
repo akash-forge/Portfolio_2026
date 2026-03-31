@@ -16,6 +16,33 @@ const Projects = () => {
         setLoading(false);
       } catch (error) {
         console.error('Error fetching projects:', error);
+        // Fallback data for frontend when backend is unreachable
+        setProjects([
+          {
+            _id: "1",
+            title: "Portfolio Website",
+            description: "Built and deployed a responsive personal portfolio displaying projects and skills using HTML, JavaScript, React, and Tailwind CSS. Developed during training at Rexnar Creative Solution.",
+            technologies: ["HTML", "JavaScript", "React", "Tailwind CSS"],
+            imageUrl: "/Portfolio_2026/projects/Website.jpg",
+            projectUrl: "https://github.com/akash-forge"
+          },
+          {
+            _id: "2",
+            title: "Web Calculator App",
+            description: "Developed a functional calculator with intuitive UI, enabling basic arithmetic via JavaScript logic. Created as part of training at Rexnar Creative Solution.",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            imageUrl: "/Portfolio_2026/projects/Calculator.jpg",
+            projectUrl: "https://github.com/akash-forge"
+          },
+          {
+            _id: "3",
+            title: "Chessboard Generator",
+            description: "Created an interactive chessboard layout using JavaScript, demonstrating DOM manipulation and layout logic. Completed during training at Rexnar Creative Solution.",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            imageUrl: "/Portfolio_2026/projects/Chess board.jpg",
+            projectUrl: "https://github.com/akash-forge"
+          }
+        ]);
         setLoading(false);
       }
     };
