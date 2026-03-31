@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-light: #FDE047;
+  --color-primary: #EAB308;
+  --color-primary-dark: #A16207;
+  --color-secondary-light: #FEF08A;
+  --color-secondary: #D97706;
+  --color-dark: #0a0a0a;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-dark);
+    color: white;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add any custom animations/styles here */
+.glass-panel {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-xl;
+}
+
+.golden-section {
+  background: linear-gradient(180deg, #0a0a0a 0%, #1c1800 50%, #0a0a0a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.golden-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(234, 179, 8, 0.05) 0%, transparent 80%);
+  pointer-events: none;
+}
