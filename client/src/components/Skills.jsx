@@ -26,7 +26,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="px-6 py-3 bg-white/5 border border-white/10 rounded-full hover:bg-white/20 transition cursor-default shadow-lg text-lg font-medium text-gray-200 hover:text-white"
+              className="px-6 py-3 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(234,179,8,0.3)] cursor-default text-lg font-medium text-gray-200 hover:text-white"
             >
               {skill.name}
             </div>

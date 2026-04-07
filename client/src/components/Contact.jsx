@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState({ type: '', message: '' });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.id]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('Sending...');
+    setLoading(true);
+    setStatus({ type: 'loading', message: 'Sending message...' });
     
     try {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
@@ -19,15 +21,17 @@ const Contact = () => {
 
       const data = await response.json();
       if (response.ok) {
-        setStatus('Message sent successfully!');
+        setStatus({ type: 'success', message: 'Message sent successfully! I will get back to you soon.' });
         setFormData({ name: '', email: '', message: '' });
       } else {
-        setStatus(data.message || 'Something went wrong');
+        setStatus({ type: 'error', message: data.message || 'Something went wrong. Please try again.' });
       }
-      setTimeout(() => setStatus(''), 3000);
     } catch (error) {
       console.error(error);
-      setStatus('Server error. Please try again later.');
+      setStatus({ type: 'error', message: 'Server unreachable. Please check your connection.' });
+    } finally {
+      setLoading(false);
+      setTimeout(() => setStatus({ type: '', message: '' }), 5000);
     }
   };
 
@@ -46,8 +50,19 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="glass-panel p-8 md:p-12 text-left">
-          <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="glass-panel p-8 md:p-12 text-left relative overflow-hidden">
+          {/* Form Status Banner */}
+          {status.message && (
+            <div className={`absolute top-0 left-0 w-full p-4 text-center text-sm font-medium transition-all duration-300 animate-in fade-in slide-in-from-top-4 ${
+              status.type === 'success' ? 'bg-green-500/20 text-green-400 border-b border-green-500/30' : 
+              status.type === 'error' ? 'bg-primary/20 text-primary-light border-b border-primary/30' : 
+              'bg-blue-500/20 text-blue-300 border-b border-blue-500/30'
+            }`}>
+              {status.message}
+            </div>
+          )}
+
+          <form onSubmit={handleSubmit} className="space-y-6 mt-4">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-400 mb-2" htmlFor="name">Name</label>
@@ -88,15 +103,23 @@ const Contact = () => {
             </div>
             <button 
               type="submit" 
-              className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-secondary-dark text-white font-bold py-4 rounded-lg transition-all shadow-lg hover:shadow-primary/50"
+              disabled={loading}
+              className={`w-full bg-gradient-to-r from-primary to-secondary text-white font-bold py-4 rounded-lg transition-all shadow-lg flex items-center justify-center gap-3 ${
+                loading ? 'opacity-70 cursor-not-allowed' : 'hover:from-primary-dark hover:to-secondary-dark hover:shadow-primary/50 active:scale-95'
+              }`}
             >
-              Send Message
+              {loading ? (
+                <>
+                  <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  Sending...
+                </>
+              ) : (
+                'Send Message'
+              )}
             </button>
-            {status && (
-              <p className={`text-center mt-4 ${status.includes('success') ? 'text-green-400' : 'text-primary-light'}`}>
-                {status}
-              </p>
-            )}
           </form>
         </div>
       </div>
