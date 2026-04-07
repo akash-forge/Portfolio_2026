@@ -63,10 +63,13 @@ const About = () => {
                 View Resume
               </a>
               <a 
-                href="#contact" 
-                className="inline-flex items-center justify-center px-8 py-4 font-bold text-gray-300 transition-all duration-200 border-2 border-white/10 rounded-xl hover:bg-white/5 hover:text-white active:scale-95"
+                href="https://drive.google.com/drive/folders/1ThXr32VjmWoWVvRtXcIANNDqvYN1BDWE?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 font-bold text-gray-300 transition-all duration-200 border-2 border-white/10 rounded-xl hover:bg-white/5 hover:text-white active:scale-95 group"
               >
-                Let's Chat
+                <svg className="w-5 h-5 mr-2 -ml-1 transition-transform group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                Certificates
               </a>
             </div>
           </div>
