@@ -50,11 +50,11 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="py-24 golden-section">
+    <section id="projects" className="py-24 white-blue-section">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Featured Work</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary-light to-secondary-light mx-auto rounded-full"></div>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900">Featured Work</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-full"></div>
         </div>
 
         {loading ? (
@@ -64,9 +64,9 @@ const Projects = () => {
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <div key={project._id} className="glass-panel overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full">
+              <div key={project._id} className="bg-white border border-slate-200 rounded-xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full shadow-md hover:shadow-xl">
                 <div className="h-48 overflow-hidden relative flex-shrink-0">
-                  <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-300 z-10"></div>
+                  <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition duration-300 z-10"></div>
                   <img
                     src={project.imageUrl}
                     alt={project.title}
@@ -74,19 +74,19 @@ const Projects = () => {
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                  <p className="text-gray-400 text-sm mb-4 flex-grow leading-relaxed">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">{project.title}</h3>
+                  <p className="text-slate-600 text-sm mb-4 flex-grow leading-relaxed">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, idx) => (
-                      <span key={idx} className="bg-white/10 text-xs px-2 py-1 rounded text-primary-light">
+                      <span key={idx} className="bg-slate-100 text-xs px-2 py-1 rounded text-primary font-medium">
                         {tech}
                       </span>
                     ))}
                   </div>
                   <div className="mt-auto">
-                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white group-hover:text-secondary transition-colors inline-flex items-center">
+                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:text-primary-dark transition-colors inline-flex items-center">
                       View Project <span className="ml-1">→</span>
                     </a>
                   </div>

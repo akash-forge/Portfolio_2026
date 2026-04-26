@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="py-8 bg-black">
+    <footer className="py-8 bg-slate-50 border-t border-slate-200">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-        <p className="text-gray-500 text-sm mb-4 md:mb-0">
+        <p className="text-slate-500 text-sm mb-4 md:mb-0">
           © {new Date().getFullYear()} Akash M. All rights reserved.
         </p>
         <div className="flex space-x-6">
