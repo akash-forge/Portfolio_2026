@@ -54,7 +54,7 @@ const About = () => {
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a 
-                href="https://drive.google.com/file/d/1LWAYB0P2hN_XcNeliUkfspj6ZliiIYgr/view?usp=drive_link" 
+                href="https://drive.google.com/file/d/1XLgNvpejcp60p1B1oZLShNownaA0ArFv/view?usp=sharing" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-gradient-to-r from-primary to-primary-dark rounded-xl hover:shadow-lg hover:shadow-primary/30 active:scale-95"

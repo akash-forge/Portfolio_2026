@@ -6,7 +6,7 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const roles = ["Web Developer", "Computer Engineer", "3D Designer", "Tech Enthusiast"];
+  const roles = ["Web Developer", "Computer Engineer", "3D Designer", "Tech Enthusiast", "Software Engineer", "AI Developer"];
 
   useEffect(() => {
     let timer = setTimeout(() => {

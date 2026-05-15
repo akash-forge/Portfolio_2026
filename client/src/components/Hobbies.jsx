@@ -22,9 +22,17 @@ const Hobbies = () => {
             </div>
             <div className="p-8">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">3D Modeling</h3>
-              <p className="text-slate-600 text-lg leading-relaxed">
+              <p className="text-slate-600 text-lg leading-relaxed mb-6">
                 When I'm not writing code, I love expressing my creativity through <span className="text-primary font-semibold">Blender</span>, designing and rendering 3D environments and objects.
               </p>
+              <a 
+                href="https://drive.google.com/drive/folders/121y986hKPZdU6zfwmt8iEwdTeR8iYjcg?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-primary font-bold hover:text-primary-dark transition-colors group"
+              >
+                View 3D Gallery <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+              </a>
             </div>
           </div>
 

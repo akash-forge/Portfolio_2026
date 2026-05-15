@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import chessBoardImg from '../assets/Chess board.jpg';
 import calculatorImg from '../assets/Calculator.jpg';
 import websiteImg from '../assets/Website.jpg';
 
@@ -24,7 +23,7 @@ const Projects = () => {
             description: "Built and deployed a responsive personal portfolio displaying projects and skills using HTML, JavaScript, React, and Tailwind CSS. Developed during training at Rexnar Creative Solution.",
             technologies: ["HTML", "JavaScript", "React", "Tailwind CSS"],
             imageUrl: "/Portfolio_2026/projects/Website.jpg",
-            projectUrl: "https://github.com/akash-forge"
+            projectUrl: "https://github.com/akash-forge/Portfolio_2026"
           },
           {
             _id: "2",
@@ -32,15 +31,15 @@ const Projects = () => {
             description: "Developed a functional calculator with intuitive UI, enabling basic arithmetic via JavaScript logic. Created as part of training at Rexnar Creative Solution.",
             technologies: ["HTML", "CSS", "JavaScript"],
             imageUrl: "/Portfolio_2026/projects/Calculator.jpg",
-            projectUrl: "https://github.com/akash-forge"
+            projectUrl: "https://github.com/akash-forge/Calculator"
           },
           {
             _id: "3",
-            title: "Chessboard Generator",
-            description: "Created an interactive chessboard layout using JavaScript, demonstrating DOM manipulation and layout logic. Completed during training at Rexnar Creative Solution.",
-            technologies: ["HTML", "CSS", "JavaScript"],
-            imageUrl: "/Portfolio_2026/projects/Chess board.jpg",
-            projectUrl: "https://github.com/akash-forge"
+            title: "Automated Content Delivery Bot",
+            description: "Developed a Python-based bot for automated content delivery, streamlining digital asset distribution with high efficiency.",
+            technologies: ["Python", "Automation", "Bot Development"],
+            imageUrl: "/Portfolio_2026/projects/content_bot.png",
+            projectUrl: "https://github.com/akash-forge/Automated-Content-Delivery-Bot/"
           }
         ]);
         setLoading(false);
