@@ -20,8 +20,8 @@ const Hero = () => {
     const i = loopNum % roles.length;
     const fullText = roles[i];
 
-    setText(isDeleting 
-      ? fullText.substring(0, text.length - 1) 
+    setText(isDeleting
+      ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1)
     );
 
@@ -49,15 +49,15 @@ const Hero = () => {
             Akash M
           </span>
         </h1>
-        
+
         <div className="h-12 md:h-16 flex items-center justify-center mb-8">
           <p className="text-2xl md:text-4xl font-semibold text-slate-700">
             I am a <span className="text-primary border-r-4 border-primary pr-1 animate-pulse">{text}</span>
           </p>
         </div>
 
-        <p className="text-lg md:text-xl text-slate-500 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-          Focused on building responsive, user-focused web applications with HTML, CSS, JS, and React. Currently pursuing B.E. in Computer Engineering.
+        <p className="text-base sm:text-lg md:text-xl text-slate-500 mb-10 max-w-7xl mx-auto px-4 sm:px-6 font-light leading-relaxed">
+          Computer Engineering student (B.E., 2023-2027) passionate about building modern web applications using React and JavaScript. My technical curiosity extends to Python automation, 3D design with Blender, and cybersecurity fundamentals with Kali Linux. Always focused on writing clean, efficient code and evolving as a versatile software engineer.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">

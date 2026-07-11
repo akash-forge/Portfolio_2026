@@ -9,16 +9,16 @@ const About = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900">About Me</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
         </div>
-        
+
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Image Content */}
           <div className="w-full lg:w-5/12 flex justify-center">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-2xl transform rotate-3 scale-105 opacity-50 blur-lg transition duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-70"></div>
-              <img 
-                 src={aboutImage} 
-                 alt="Akash M" 
-                 className="relative z-10 w-64 md:w-80 h-auto object-cover rounded-2xl border-4 border-white/10 shadow-2xl transition duration-500 group-hover:-translate-y-2"
+              <img
+                src={aboutImage}
+                alt="Akash M"
+                className="relative z-10 w-64 md:w-80 h-auto object-cover rounded-2xl border-4 border-white/10 shadow-2xl transition duration-500 group-hover:-translate-y-2"
               />
             </div>
           </div>
@@ -27,12 +27,12 @@ const About = () => {
           <div className="w-full lg:w-7/12">
             <div className="glass-panel p-8 mb-8 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-10 -mt-10 transition duration-500 group-hover:bg-primary/20"></div>
-              <h3 className="text-2xl font-semibold mb-4 text-primary">Who I Am</h3>
-              <p className="text-slate-600 leading-relaxed font-light text-lg">
-                I'm a Web Developer with hands-on experience in HTML, CSS, JavaScript, and React, currently pursuing a B.E. in Computer Engineering at Annai Vailankanni College of Engineering (2023–2027). Passionate about building responsive, user-focused web applications and continuously improving through collaboration and modern development practices. Open to internships and entry-level opportunities to contribute technical skills and grow within the tech industry.
+              <h3 className="text-2xl font-semibold mb-4 text-primary text-center lg:text-left">Who I Am</h3>
+              <p className="text-slate-600 leading-relaxed font-light text-base sm:text-lg text-justify sm:text-left">
+                I'm a Computer Engineering student (B.E., 2023-2027) with hands-on experience in React, JavaScript, and Python automation. I’ve built projects ranging from responsive web applications to AI-powered bots, combining clean code with practical problem-solving. Beyond development, I explore 3D design with Blender and ethical hacking fundamentals using Kali Linux, giving me both creative and security-focused perspectives. Passionate about continuous learning and collaboration, I’m open to internships and entry-level opportunities where I can contribute technical skills and grow as a versatile software engineer.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 cursor-default">
                 <span className="block text-3xl md:text-4xl font-bold text-primary mb-2">B.E.</span>
@@ -53,8 +53,8 @@ const About = () => {
             </div>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a 
-                href="https://drive.google.com/file/d/1XLgNvpejcp60p1B1oZLShNownaA0ArFv/view?usp=sharing" 
+              <a
+                href="https://drive.google.com/file/d/1XLgNvpejcp60p1B1oZLShNownaA0ArFv/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-gradient-to-r from-primary to-primary-dark rounded-xl hover:shadow-lg hover:shadow-primary/30 active:scale-95"
@@ -62,8 +62,8 @@ const About = () => {
                 <svg className="w-5 h-5 mr-2 -ml-1 transition-transform group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                 View Resume
               </a>
-              <a 
-                href="https://drive.google.com/drive/folders/1ThXr32VjmWoWVvRtXcIANNDqvYN1BDWE?usp=sharing" 
+              <a
+                href="https://drive.google.com/drive/folders/1ThXr32VjmWoWVvRtXcIANNDqvYN1BDWE?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 font-bold text-slate-600 transition-all duration-200 border-2 border-slate-200 rounded-xl hover:bg-slate-50 hover:text-primary active:scale-95 group"

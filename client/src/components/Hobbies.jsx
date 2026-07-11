@@ -1,5 +1,6 @@
 import React from 'react';
 import blenderImg from '../assets/Blender.jpg';
+import networkImg from '../assets/Network Security.jpg';
 import gymImg from '../assets/Gym.jpeg';
 
 const Hobbies = () => {
@@ -9,9 +10,9 @@ const Hobbies = () => {
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900">Beyond the Code</h2>
         <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-16"></div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {/* Hobby Card */}
-          <div className="bg-white border border-slate-200 rounded-xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col text-left shadow-md hover:shadow-xl">
+          <div className="bg-white border border-slate-200 rounded-xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col text-left shadow-md hover:shadow-xl mx-auto max-w-sm">
             <div className="h-56 w-full relative overflow-hidden">
               <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-300 z-10"></div>
               <img 
@@ -37,7 +38,7 @@ const Hobbies = () => {
           </div>
 
           {/* Fitness Card */}
-          <div className="bg-white border border-slate-200 rounded-xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col text-left shadow-md hover:shadow-xl">
+          <div className="bg-white border border-slate-200 rounded-xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col text-left shadow-md hover:shadow-xl mx-auto max-w-sm">
             <div className="h-56 w-full relative overflow-hidden">
               <div className="absolute inset-0 bg-secondary/20 group-hover:bg-transparent transition duration-300 z-10"></div>
               <img 
@@ -53,7 +54,24 @@ const Hobbies = () => {
               </p>
             </div>
           </div>
-        </div>
+
+          {/* Network Security Card */}
+          <div className="bg-white border border-slate-200 rounded-xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col text-left shadow-md hover:shadow-xl mx-auto max-w-sm">
+            <div className="h-56 w-full relative overflow-hidden">
+              <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition duration-300 z-10"></div>
+              <img 
+                src={networkImg} 
+                alt="Network Security with Kali Linux" 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+              />
+            </div>
+            <div className="p-8">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Network Security</h3>
+              <p className="text-slate-600 text-lg leading-relaxed mb-6">
+                Passionate about cybersecurity, I explore network penetration testing, vulnerability assessment, and ethical hacking using <span className="text-primary font-semibold">Kali Linux</span> tools and techniques.
+              </p>
+            </div>
+          </div>        </div>
       </div>
     </section>
   );
