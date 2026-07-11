@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/Blue tech logo.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -16,7 +15,6 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-dark/80 backdrop-blur-lg shadow-lg py-4' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <a href="#" className="flex items-center space-x-3">
-          <img src={logo} alt="Logo" className="h-14 w-auto hover:scale-110 transition-transform duration-300" />
           <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-light to-secondary-light">
             AKASH M
           </span>
