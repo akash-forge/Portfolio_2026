@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImage from '../assets/about.jpeg';
+import aboutImage from '../assets/Formal pic-1.png';
 
 const About = () => {
   return (
@@ -43,7 +43,7 @@ const About = () => {
                 <span className="text-slate-500 text-sm">CGPA</span>
               </div>
               <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 cursor-default">
-                <span className="block text-3xl md:text-4xl font-bold text-primary mb-2">3+</span>
+                <span className="block text-3xl md:text-4xl font-bold text-primary mb-2">4+</span>
                 <span className="text-slate-500 text-sm">Projects Completed</span>
               </div>
               <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-secondary/10 cursor-default">
@@ -54,7 +54,7 @@ const About = () => {
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="https://drive.google.com/file/d/1XLgNvpejcp60p1B1oZLShNownaA0ArFv/view?usp=sharing"
+                href="https://drive.google.com/file/d/1JGZKG2HBznmK4cDbISng5t_9I_XBt7S5/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-gradient-to-r from-primary to-primary-dark rounded-xl hover:shadow-lg hover:shadow-primary/30 active:scale-95"

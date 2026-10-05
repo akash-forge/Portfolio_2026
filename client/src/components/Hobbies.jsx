@@ -1,7 +1,7 @@
 import React from 'react';
 import blenderImg from '../assets/Blender.jpg';
 import networkImg from '../assets/Network Security.jpg';
-import gymImg from '../assets/Gym.jpeg';
+import gymImg from '../assets/Gym - 3.jpeg';
 
 const Hobbies = () => {
   return (

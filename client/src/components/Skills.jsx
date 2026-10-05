@@ -8,18 +8,22 @@ gsap.registerPlugin(ScrollTrigger);
 const Skills = () => {
   const container = useRef();
   const skills = [
-    { name: 'JavaScript', category: 'Frontend' },
-    { name: 'React', category: 'Frontend' },
-    { name: 'Python', category: 'Automation' },
-    { name: 'HTML5', category: 'Frontend' },
-    { name: 'CSS', category: 'Frontend' },
+    { name: 'JavaScript (ES6+)', category: 'Frontend' },
+    { name: 'React.js', category: 'Frontend' },
+    { name: 'Python', category: 'Programming' },
+    { name: 'SQL', category: 'Database' },
+    { name: 'Streamlit', category: 'Frameworks' },
+    { name: 'OpenAI API & LLMs', category: 'AI' },
+    { name: 'OpenRouter & REST APIs', category: 'AI & APIs' },
     { name: 'Tailwind CSS', category: 'Frameworks' },
+    { name: 'HTML5 & CSS3', category: 'Frontend' },
     { name: 'Bootstrap', category: 'Frameworks' },
     { name: 'Git & GitHub', category: 'Version Control' },
     { name: 'VS Code', category: 'Tools' },
+    { name: 'Blender 3D', category: 'Creative' },
+    { name: 'Canva', category: 'Design' },
     { name: 'Kali Linux', category: 'Security' },
     { name: 'Network Security', category: 'Security' },
-    { name: 'Blender', category: 'Animation' },
   ];
 
   useGSAP(() => {

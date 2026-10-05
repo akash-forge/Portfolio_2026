@@ -8,25 +8,32 @@ connectDB();
 
 const projects = [
   {
+    title: "AI Voice & Chat Assistant",
+    description: "Rapidly prototyped a sci-fi themed AI assistant web app featuring dual text and voice communication modes, integrating OpenAI-compatible APIs (OpenRouter) with support for 9+ models (GPT-4o, Claude, Gemini) and self-healing voice recognition loop.",
+    technologies: ["Python", "Streamlit", "OpenAI API", "OpenRouter", "Web Speech API"],
+    imageUrl: "/Portfolio_2026/projects/ai_assistant.jpg",
+    projectUrl: "https://github.com/akash-forge"
+  },
+  {
+    title: "Automated Content Delivery Bot",
+    description: "Built a full-stack automation system that fetches daily vocabulary via Wordnik API, filters it through a custom Python blocklist, and auto-delivers formatted messages to WhatsApp using a self-healing n8n workflow.",
+    technologies: ["Python", "Flask", "Selenium", "n8n", "Wordnik API"],
+    imageUrl: "/Portfolio_2026/projects/content_bot.png",
+    projectUrl: "https://github.com/akash-forge/Automated-Content-Delivery-Bot/"
+  },
+  {
     title: "Portfolio Website",
-    description: "Built and deployed a responsive personal portfolio displaying projects and skills using HTML, JavaScript, React, and Tailwind CSS. Developed during training at Rexnar Creative Solution.",
+    description: "Built and deployed a responsive personal portfolio displaying projects and skills using HTML, JavaScript, React, and Tailwind CSS.",
     technologies: ["HTML", "JavaScript", "React", "Tailwind CSS"],
     imageUrl: "/Portfolio_2026/projects/Website.jpg",
-    projectUrl: "https://github.com/akash-forge"
+    projectUrl: "https://github.com/akash-forge/Portfolio_2026"
   },
   {
     title: "Web Calculator App",
-    description: "Developed a functional calculator with intuitive UI, enabling basic arithmetic via JavaScript logic. Created as part of training at Rexnar Creative Solution.",
+    description: "Developed a functional calculator with intuitive UI, enabling basic arithmetic via JavaScript logic.",
     technologies: ["HTML", "CSS", "JavaScript"],
     imageUrl: "/Portfolio_2026/projects/Calculator.jpg",
-    projectUrl: "https://github.com/akash-forge"
-  },
-  {
-    title: "Chessboard Generator",
-    description: "Created an interactive chessboard layout using JavaScript, demonstrating DOM manipulation and layout logic. Completed during training at Rexnar Creative Solution.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    imageUrl: "/Portfolio_2026/projects/Chess board.jpg",
-    projectUrl: "https://github.com/akash-forge"
+    projectUrl: "https://github.com/akash-forge/Calculator"
   }
 ];
 
